@@ -13,7 +13,7 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
  
 📌 **This project was a team effort, but further description focuses on my individual contribution** to the project: Exploratory Data Analysis (EDA) and Data Preprocessing. 
 
-## 🔍 My Contributions
+## My Contributions
 ### 1. Exploratory Data Analysis (EDA)
 - Summary statistics for numerical and categorical features
 - Visual analysis using histograms, bar plots, and correlation heatmaps
