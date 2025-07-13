@@ -11,7 +11,7 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
   - Clustering (KMeans, T-SNE visualization)
   - Classification (Support Vector Machine, Logistic Regression)
  
-📌 **This project was a team effort, but further description focuses on my individual contribution** to the project: Exploratory Data Analysis (EDA) and Data Preprocessing. Although I was helping with other parts, I was not the main contributor. 
+📌 **This project was a team effort, but further description focuses on my individual contribution** to the project: Exploratory Data Analysis (EDA) and Data Preprocessing. 
 
 ## 🔍 My Contributions
 ### 1. Exploratory Data Analysis (EDA)
