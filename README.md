@@ -20,19 +20,21 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
 - Outlier detection using Z-score and IQR methods
 - Analysis of class imbalance in target variable (`income`)
 
-### 2. Data Preprocessing
-- Converted missing values (`?`) into `NaN` and compared:
-  - Row removal
-  - Mode imputation
-  - KNN imputation (chosen method)
-- Grouped and simplified categorical variables (e.g., marital status)
-- Encoded categorical features (label encoding & one-hot encoding)
-- Standardized numerical features using `StandardScaler`
-- Evaluated class balancing using SMOTE (decided against it to preserve precision)
+### 2. Missing Values Analysis
+- Found ~7.4% of the data had missing values in `workclass`, `occupation`, and `native-country`
+- Implemented and **compared three strategies**:
+  - Row deletion (simple but data-destructive)
+  - Mode imputation (biased some categorical distributions)
+  - **KNN imputation** – selected for preserving feature distribution and improving model performance (F1, AUC)
 
-### 3. Documentation
-- Wrote detailed summary and rationale for each preprocessing step
-- Analyzed trade-offs (e.g., imputation bias vs. data loss)
+### 3. Data Preprocessing
+- Converted missing values (`?`) into `NaN` and used KNN imputation for filling missing values
+- Grouped and simplified categorical variables (e.g., marital status)
+- Discretized age into bins
+- Encoded categorical features
+  - One-hot encoding for unsupervised tasks
+  - Label/manual encoding for supervised learning
+- Standardized numerical features using `StandardScaler`
  
 ## Used tools
 - Python
@@ -40,6 +42,11 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
 - Scikit-learn
 - Seaborn, Matplotlib
 - Jupyter Notebook
+
+## Author
+**Zuzanna Emilia Derylo**  
+📧 zuzia.derylo@gmail.com
+🔗 [GitHub Profile](https://github.com/zuzannaderylo)
 
 ---
 
