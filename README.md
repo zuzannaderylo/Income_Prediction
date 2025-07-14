@@ -47,6 +47,39 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
   - Label/manual encoding for supervised learning
 - Standardized numerical features using `StandardScaler`
 
+## Results Summary
+- Best model: Support Vector Classifier (F1 > $50K: 0.67)
+- Top predictive features: capital-gain, marital-status, education
+- KNN imputation outperformed other strategies and preserved data distribution
+
+## Installation 
+To run the project locally, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/zuzannaderylo/income-prediction.git
+cd income-prediction
+```
+
+### 2. Create a virtual environment (optional)
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. Launch Jupyter Notebook
+```
+jupyter notebook
+```
+Open Assignment.ipynb to run the full pipeline, including EDA, data cleaning, modeling, and evaluation.
+
+Open MissingValuesAnalysis.ipynb to compare different imputation strategies.
+
 ## Used tools
 - Python
 - Pandas, NumPy
@@ -54,9 +87,11 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
 - Seaborn, Matplotlib
 - Jupyter Notebook
 
+
 ## Author
 **Zuzanna Emilia Derylo**  
 📧 zuzia.derylo@gmail.com
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/zuzannaderylo/)
 🔗 [GitHub Profile](https://github.com/zuzannaderylo)
 
 ---
