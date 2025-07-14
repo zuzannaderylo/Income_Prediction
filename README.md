@@ -1,17 +1,26 @@
 # Income Prediction using Census Data
 This project explores the Adult Income dataset from the UCI Machine Learning Repository to analyze and predict whether individuals earn more or less than $50,000 per year. The dataset contains demographic and employment-related features, making it ideal for applying data preprocessing, exploratory data analysis (EDA), unsupervised learning, and supervised classification models.
 
+## Repository Structure
+
+| File | Description |
+|------|-------------|
+| `Assignment.ipynb` | Main analysis notebook with EDA, preprocessing, and transformation |
+| `MissingValuesAnalysis.ipynb` | Comparison of missing data strategies (KNN, Mode, Deletion) |
+| `adult.csv` | Cleaned dataset (from UCI Adult Income dataset) |
+| `requirements.txt` | Required Python libraries |
+| `README.md` | This file |
+
 ## Project Overview
 - **Dataset**: [UCI Adult Income Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
 - **Goal**: Identify key demographic and employment-related features that influence income level and can be used to predict it. 
 - **Techniques used**:
   - Exploratory Data Analysis (EDA)
   - Data Cleaning and Preprocessing
-  - Dimensionality Reduction (PCA)
-  - Clustering (KMeans, T-SNE visualization)
-  - Classification (Support Vector Machine, Logistic Regression)
+  - Unsupervised learning: Dimensionality Reduction (PCA), Clustering (KMeans, T-SNE visualization)
+  - Supervised learning: Support Vector Classification, Logistic Regression
  
-📌 **This project was a team effort, but further description focuses on my individual contribution** to the project: Exploratory Data Analysis (EDA) and Data Preprocessing. 
+📌 **This project was a team effort. The following description focuses on my individual contribution to the project: Exploratory Data Analysis (EDA), and Data Cleaning and Preprocessing.**
 
 ## My Contributions
 ### 1. Exploratory Data Analysis (EDA)
@@ -19,15 +28,17 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
 - Visual analysis using histograms, bar plots, and correlation heatmaps
 - Outlier detection using Z-score and IQR methods
 - Analysis of class imbalance in target variable (`income`)
+- Identified skewness in capital-gain and capital-loss, with most values concentrated at 0
+- Noted class imbalance in the target variable: ~76% earn <=$50K
 
-### 2. Missing Values Analysis
-- Found ~7.4% of the data had missing values in `workclass`, `occupation`, and `native-country`
-- Implemented and **compared three strategies**:
-  - Row deletion (simple but data-destructive)
-  - Mode imputation (biased some categorical distributions)
-  - **KNN imputation** – selected for preserving feature distribution and improving model performance (F1, AUC)
+### 2. Missing Values Strategy Analysis
+- Identified ~7.4% missing data in `workclass`, `occupation`, and `native-country`
+- Implemented and evaluated three imputation methods:
+  - **Row Deletion** – simple but removed valuable data
+  - **Mode Imputation** – distorted categorical distributions
+  - **KNN Imputation** – chosen for best balance between accuracy and distribution preservation (improved F1 and AUC)
 
-### 3. Data Preprocessing
+### 3. Data Cleaning and Preprocessing
 - Converted missing values (`?`) into `NaN` and used KNN imputation for filling missing values
 - Grouped and simplified categorical variables (e.g., marital status)
 - Discretized age into bins
@@ -35,7 +46,7 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
   - One-hot encoding for unsupervised tasks
   - Label/manual encoding for supervised learning
 - Standardized numerical features using `StandardScaler`
- 
+
 ## Used tools
 - Python
 - Pandas, NumPy
