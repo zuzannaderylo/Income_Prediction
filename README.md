@@ -1,4 +1,4 @@
-# Income Prediction using Census Data
+# Machine Learning for Income Prediction using Census Data
 This project explores the Adult Income dataset from the UCI Machine Learning Repository to analyze and predict whether individuals earn more or less than $50,000 per year. The dataset contains demographic and employment-related features, making it ideal for applying data preprocessing, exploratory data analysis (EDA), unsupervised learning, and supervised classification models.
 
 ## Repository Structure
