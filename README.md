@@ -34,9 +34,9 @@ This project explores the Adult Income dataset from the UCI Machine Learning Rep
 ### 2. Missing Values Strategy Analysis
 - Identified ~7.4% missing data in `workclass`, `occupation`, and `native-country`
 - Implemented and evaluated three imputation methods:
-  - **Row Deletion** – simple but removed valuable data
-  - **Mode Imputation** – distorted categorical distributions
-  - **KNN Imputation** – chosen for best balance between accuracy and distribution preservation (improved F1 and AUC)
+  - Row Deletion – simple but removed valuable data
+  - Mode Imputation – distorted categorical distributions
+  - KNN Imputation – chosen for best balance between accuracy and distribution preservation (improved F1 and AUC)
 
 ### 3. Data Cleaning and Preprocessing
 - Converted missing values (`?`) into `NaN` and used KNN imputation for filling missing values
@@ -80,7 +80,7 @@ Open Assignment.ipynb to run the full pipeline, including EDA, data cleaning, mo
 
 Open MissingValuesAnalysis.ipynb to compare different imputation strategies.
 
-## Used tools
+## Tools & Technologies
 - Python
 - Pandas, NumPy
 - Scikit-learn
